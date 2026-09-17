@@ -91,11 +91,9 @@ wallpaper-daily/
 │   ├── category.js     # Vercel API — 按分类获取
 │   └── random.js       # Vercel API — 随机壁纸
 ├── scripts/
-│   ├── sync_github.py      # 数据同步脚本
-│   └── post_discussion.py  # GitHub Discussion 推送
+│   └── sync_github.py      # 数据同步脚本
 ├── .github/workflows/
-│   ├── daily.yml           # 每日同步 (02:00 UTC)
-│   └── post-discussion.yml # Discussion 推送 (10:00 UTC)
+│   └── daily.yml           # 每日同步 (02:00 UTC)
 ├── worker.js           # Cloudflare Worker 备用方案
 ├── vercel.json         # Vercel 配置
 ├── package.json
