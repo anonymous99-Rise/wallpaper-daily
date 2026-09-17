@@ -7,7 +7,7 @@ const CORS_HEADERS = {
   'Content-Type': 'application/json; charset=utf-8',
 };
 
-const GITHUB_RAW = 'https://raw.githubusercontent.com/adminlove520/wallpaper-daily/main/api/today.json';
+const GITHUB_RAW = 'https://raw.githubusercontent.com/anonymous99-Rise/wallpaper-daily/main/api/today.json';
 
 export default {
   async fetch(request) {

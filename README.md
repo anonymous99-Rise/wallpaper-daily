@@ -9,8 +9,9 @@
 ### 获取全部分类
 
 ```
-GET https://wallpaper-daily-iota.vercel.app/api/latest
-GET https://raw.githubusercontent.com/adminlove520/wallpaper-daily/main/api/today.json
+GET https://wallpaper-daily-love.vercel.app/api
+GET https://wallpaper-daily-love.vercel.app/api/latest
+GET https://raw.githubusercontent.com/anonymous99-Rise/wallpaper-daily/main/api/today.json
 ```
 
 返回示例：
@@ -45,7 +46,7 @@ GET /api/random
 
 ## 快速部署
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/import?repo=adminlove520/wallpaper-daily)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/import?repo=anonymous99-Rise/wallpaper-daily)
 
 或手动部署：
 
@@ -70,7 +71,7 @@ vercel --prod
 ```python
 import urllib.request, json
 
-url = "https://raw.githubusercontent.com/adminlove520/wallpaper-daily/main/api/today.json"
+url = "https://raw.githubusercontent.com/anonymous99-Rise/wallpaper-daily/main/api/today.json"
 data = json.loads(urllib.request.urlopen(url).read())
 
 for cat, info in data['categories'].items():
@@ -85,15 +86,14 @@ for cat, info in data['categories'].items():
 wallpaper-daily/
 ├── api/
 │   ├── today.json      # 今日壁纸数据（GitHub Actions 自动更新）
+│   ├── index.js        # Vercel API — 接口入口页
 │   ├── latest.js       # Vercel API — 获取全部分类
 │   ├── category.js     # Vercel API — 按分类获取
 │   └── random.js       # Vercel API — 随机壁纸
 ├── scripts/
-│   ├── sync_github.py      # 数据同步脚本
-│   └── post_discussion.py  # GitHub Discussion 推送
+│   └── sync_github.py      # 数据同步脚本
 ├── .github/workflows/
-│   ├── daily.yml           # 每日同步 (02:00 UTC)
-│   └── post-discussion.yml # Discussion 推送 (10:00 UTC)
+│   └── daily.yml           # 每日同步 (02:00 UTC)
 ├── worker.js           # Cloudflare Worker 备用方案
 ├── vercel.json         # Vercel 配置
 ├── package.json
