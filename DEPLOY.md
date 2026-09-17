@@ -19,6 +19,7 @@ vercel --prod
 
 | 端点 | 说明 |
 |------|------|
+| `/` | API 入口页（等同 `/api`） |
 | `/api` | API 入口页 |
 | `/api/latest` | 获取全部分类壁纸 |
 | `/api/category?name=bing` | 按分类获取（bing/desktop/mobile/avatar） |
