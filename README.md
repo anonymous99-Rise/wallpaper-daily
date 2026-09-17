@@ -9,6 +9,7 @@
 ### 获取全部分类
 
 ```
+GET https://wallpaper-daily-love.vercel.app/
 GET https://wallpaper-daily-love.vercel.app/api
 GET https://wallpaper-daily-love.vercel.app/api/latest
 GET https://raw.githubusercontent.com/anonymous99-Rise/wallpaper-daily/main/api/today.json

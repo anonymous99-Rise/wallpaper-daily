@@ -4,6 +4,12 @@
       "includeFiles": "api/today.json"
     }
   },
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/api"
+    }
+  ],
   "headers": [
     {
       "source": "/api/(.*)",
