@@ -4,7 +4,7 @@
 
 ### 1. 一键部署
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/import?repo=adminlove520/wallpaper-daily)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/import?repo=anonymous99-Rise/wallpaper-daily)
 
 ### 2. 手动部署
 
@@ -19,6 +19,7 @@ vercel --prod
 
 | 端点 | 说明 |
 |------|------|
+| `/api` | API 入口页 |
 | `/api/latest` | 获取全部分类壁纸 |
 | `/api/category?name=bing` | 按分类获取（bing/desktop/mobile/avatar） |
 | `/api/random` | 随机返回一个分类的壁纸 |
@@ -28,7 +29,7 @@ vercel --prod
 ## 方案二：GitHub RAW（无需部署）
 
 ```
-https://raw.githubusercontent.com/adminlove520/wallpaper-daily/main/api/today.json
+https://raw.githubusercontent.com/anonymous99-Rise/wallpaper-daily/main/api/today.json
 ```
 
 数据由 GitHub Actions 每日 02:00 UTC 自动同步。
@@ -51,10 +52,10 @@ wrangler deploy worker.js
 import urllib.request, json
 
 # GitHub RAW（推荐，无需部署）
-url = "https://raw.githubusercontent.com/adminlove520/wallpaper-daily/main/api/today.json"
+url = "https://raw.githubusercontent.com/anonymous99-Rise/wallpaper-daily/main/api/today.json"
 
 # 或 Vercel API
-# url = "https://wallpaper-daily-iota.vercel.app/api/latest"
+# url = "https://wallpaper-daily-love.vercel.app/api/latest"
 
 data = json.loads(urllib.request.urlopen(url).read())
 
