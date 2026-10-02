@@ -1,12 +1,15 @@
 {
-  "date": "2026-10-01",
-  "generatedAt": "2026-10-01T08:40:10.405118Z",
+  "date": "2026-10-02",
+  "generatedAt": "2026-10-02T08:16:50.696171Z",
   "categories": {
     "bing": {
       "title": "穿越山口腹地",
       "url": "https://www.bing.com/th?id=OHR.WinnatsPassPeak_ZH-CN4443458412_1920x1080.jpg"
     },
-    "desktop": null,
+    "desktop": {
+      "title": "豁达笑对烦恼的开怀三维卡通和尚",
+      "url": "https://cdn.jsdelivr.net/gh/IT-NuanxinPro/nuanXinProPic@latest/wallpaper/desktop/插画/卡通/2026-08-11_38398.jpg"
+    },
     "mobile": {
       "title": "洁白门前长发少女的清新治愈微笑",
       "url": "https://cdn.jsdelivr.net/gh/IT-NuanxinPro/nuanXinProPic@latest/wallpaper/mobile/人像/清新/【恋风】20260819160501.png"
